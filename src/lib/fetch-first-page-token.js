@@ -22,7 +22,7 @@ const getWatchDiscussion = res =>
 const extractButtonElement = $w =>
   cheerioFind(
     $w,
-    '.comment-section-sort-menu li:nth-child(2) button.comment-section-sort-menu-item'
+    '.comment-section-sort-menu li:nth-child(1) button.comment-section-sort-menu-item'
   ).leftMap(
     _ => `Cannot find "Newest First" button element in comment watch fragment:
 ${$w.html()}`
